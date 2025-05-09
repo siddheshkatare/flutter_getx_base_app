@@ -1,0 +1,61 @@
+name: smp_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  get_storage: ^2.1.1
+  flutter_gen: ^5.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/env/
+    
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+
+    # PoppinsBold
+    - family: PoppinsBold
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+    
+    # NexaBold
+    - family: NexaBold
+      fonts:
+        - asset: assets/fonts/NexaBold.otf
+    
+    # NexaLight
+    - family: NexaLight
+      fonts:
+        - asset: assets/fonts/NexaLight.otf
+    
+    # NexaRegular
+    - family: NexaRegular
+      fonts:
+        - asset: assets/fonts/NexaRegular.ttf
+
+flutter_gen:
+  output: lib/gen/ 
+  integrations:
+    flutter_svg: true
+    lottie: true
